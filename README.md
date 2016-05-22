@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cordova Background Geolocation &mdash; Sample Application
 
 <a href="market://details?id=com.transistorsoft.background_geolocation.ionic">
@@ -112,3 +113,7 @@ The app implements a **longtap** event on the map.  Simply **tap & hold** the ma
 Enter an `identifier`, `radius`, `notifyOnExit`, `notifyOnEntry`.
 
 
+=======
+# Team-1
+Team 1's Project
+>>>>>>> 2cdcb85f9efaaf27718f00048fc4d6e196a3fd03
