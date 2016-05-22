@@ -1,0 +1,75 @@
+
+        <ion-side-menus enable-menu-with-back-views="false" >
+
+        <ion-side-menu-content>
+          <ion-nav-bar class="bar-custom">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+              <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+              </button>
+            </ion-nav-buttons>
+          </ion-nav-bar>
+
+          <ion-nav-view name="menuContent"></ion-nav-view>
+        </ion-side-menu-content> 
+
+        <ion-side-menu side="left">
+          <ion-header-bar class="bar-left-custom">
+           <p class="title juanasafe-sideMenu">JuanaSafe</p>
+            <p class="sidemenu-username">CZA RINA<br /><small>LVL 1</small></p> 
+            <img src="img/icons/male-circle-512.png" alt="" class="img-avatar">
+          </ion-header-bar>
+          <ion-content scroll="true">
+            <ul class="list sidemenu-list">
+              <!-- Note each link has the 'menu-close' attribute so the menu auto closes when clicking on one of these links -->
+              <div class="sideMenu-topContainer">
+                  
+              </div>
+             
+              <a ui-sref="eventmenu.home" class="item item-marginTopSet" menu-close>
+              <i class="ion-ios-home"></i>
+              Home
+              </a>
+              <a ui-sref="eventmenu.map" class="item" menu-close>
+                 <i class="ion-map"></i>
+                  Map
+                </a>
+              <a ui-sref="eventmenu.contacts" class="item" menu-close>
+                 <i class="ion-ios-people"></i>
+                  Contacts
+                </a>
+              <a ui-sref="eventmenu.reports" class="item" menu-close>
+                 <i class="ion-document-text"></i>
+                  Reports
+                </a>
+              <a ui-sref="eventmenu.awareness" class="item" menu-close>
+                 <i class="ion-alert"></i>
+                  Awareness
+                </a>
+                 <a ui-sref="eventmenu.leadership" class="item" menu-close>
+                 <i class="ion-trophy"></i>
+                  Leadership
+                </a>
+                <a ui-sref="eventmenu.stats" class="item" menu-close>
+                 <i class="ion-help-circled"></i>
+                  Stats
+                </a>
+              <a ui-sref="eventmenu.settings" class="item" menu-close>
+                 <i class="ion-gear-b"></i>
+                  Settings
+                </a>
+              <a ui-sref="eventmenu.help" class="item" menu-close>
+                 <i class="ion-help-circled"></i>
+                  Help
+                </a>
+                <a ui-sref="eventmenu.signout" class="item" menu-close>
+                 <i class="ion-help-circled"></i>
+                  Signout
+                </a>
+            </ul>
+          </ion-content>
+        </ion-side-menu>
+
+      </ion-side-menus>

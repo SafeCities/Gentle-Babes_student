@@ -1,0 +1,39 @@
+<ion-view view-title="Sign-In">
+    <ion-content scroll="false" id="signin-content" ng-style="changeBG">
+      
+        <div class="col col-80 col-offset-10 container-signin" ng-style="signinContainer">
+            <img src="img/logo.png" class="signin-logo"alt="" ng-style="changeLogoSize">
+            <p class="juanasafe" ng-style="changeJuanaSize">JuanaSafe</p>
+            
+             <div class="list list-inset fade" ng-show="myVar">
+                <label class="item item-input change-radius-top">
+                    <i class="ion-email"></i>
+                    <input type="text" placeholder="{{womensPlaceholder}}" />
+                </label>
+                <label class="item item-input change-radius-bottom">
+                   <i class="ion-locked"></i>
+                    <input type="text" placeholder="Password" />
+                </label>
+                <a href="" class="forgot-password">
+                    <p>Forgot Password?</p>
+                </a>
+                
+            </div>
+            
+            <div class="padding-button">
+                <button class="button button-block button-custom-signin" ng-click="signInUser()" ng-style="styleUser; styleWomen">
+                    {{userText}}
+                </button>
+               
+                <button class="button button-block button-custom-signup" ng-click="signInWomen()">
+                    {{womenText}}
+                </button>
+                <input type="hidden" name="checker" id="checker" ng-value="checker"/>
+              
+            </div>
+        </div>
+        <div class="bar bar-footer">
+             <div class="title">Copyright 2016 | Gentle Bebes</div>
+        </div>
+    </ion-content>
+</ion-view>

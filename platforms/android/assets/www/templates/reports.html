@@ -1,0 +1,54 @@
+ <ion-view view-title="REPORTS">
+        <ion-content class="padding">
+          <div class="row">
+                <div class="col">
+                    <p class="contactsSec-topText">Report any type of harassments or crime that you experienced or witness in a place.</p>
+                    <hr>
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col col-50">
+                            <form action="">
+                              <input type="radio" name="" value=""> Get my location<br>
+                              <input type="radio" name="" value=""> Mark a place<br>
+                            </form>
+                        </div>
+                        <div class="col col-50">
+                           
+                                 <button class="button-community-reports" ng-click="openModalReport()">View Community Reports</button>
+                    
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col col-80 col-offset-10 col-reportForm">
+                       
+                             
+                                  <h4 class="h4-white-color">Topic</h4>
+                                   <textarea class="msd-elastic elastic-topic" ng-model="topic"></textarea>
+                                   
+                                  <h4 class="h4-white-color" style="margin-top: 50px;">Report</h4>
+                                 <textarea class="msd-elastic elastic-report" ng-model="report"></textarea>
+                           
+                       
+                            <button class="button-takephoto-reports" ng-click="takePhoto()">Take Photo</button>
+                            <button class="button-record-reports" ng-click="takeRecord()">Record</button>
+                            <div class="bar bar-subfooter bar-bottom">
+                             <div class="title" style="padding: 0!important; margin: 0!important;">
+                                 <button class="subfooter-cancel">CANCEL</button>
+                                  <button class="subfooter-submit" ng-click="sendReport(topic, report)">SUBMIT</button>
+                             </div>
+                              
+                            </div>
+                          </div>
+                          
+            
+                        </div>
+                    </div>
+                  
+                </div>
+           
+        </ion-content>
+
+          <div class="bar bar-footer">
+             <div class="title">Copyright 2016 | Gentle Bebes</div>
+        </div>
+</ion-view>

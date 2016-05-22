@@ -1,0 +1,43 @@
+ <ion-view view-title="SETTINGS">
+        <ion-content class="padding">
+            <div class="row" padding="false">
+            <div class="col col-85 col-offset-5">
+              
+               <p class="emergencyMode-text">EMERGENCY MODE</p>
+               <p style="margin-top: 30px;">Emergency message sent</p>
+               <textarea class="msd-elastic: /n elastic-settings" ng-model="message" placeholder="Please come, I need your help, I feel unsafe and harrased....."></textarea>
+<!--               <input type="textarea" style="width: 100%;" value="I'm in danger! I need help!" />-->
+               
+               <p>Send location update every</p>
+                 <select style="width: 40%; margin-bottom: 15px;">
+                  <option value="">5minutes</option>
+                  <option value="">10minutes</option>
+                  <option value="">15minutes</option>
+                  <option value="">20minutes</option>
+                </select>
+                
+                <p>Sound</p>
+                 <select style="width: 40%; margin-bottom: 30px;">
+                  <option value="on">On</option>
+                  <option value="off">Off</option>
+                </select>
+               
+               <p class="emergencyMode-text" style="margin-bottom: 20px;">SOCIAL</p>
+               <div class="row" styl="display: inline-block">
+                   <div class="col col-50 facebook-set">
+                   <p>Facebook</p><button class="button-shareFacebook">Share on Facebook!</button>
+               </div>
+               <div class="col col-50 twitter-set">
+                   <p>Twitter</p><button class="button-shareTwitter">Share on Twitter!</button>
+               </div>
+               </div>
+               
+               
+                </div>
+            </div>
+        </ion-content>
+        
+         <div class="bar bar-footer">
+             <div class="title">Copyright 2016 | Gentle Bebes</div>
+        </div>
+</ion-view>

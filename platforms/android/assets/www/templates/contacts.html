@@ -1,0 +1,31 @@
+ <ion-view view-title="CONTACTS">
+        <ion-content class="padding">
+            <div class="row">
+                <div class="col">
+                    <p class="contactsSec-topText">These people are your emergency contacts and will be alerted when you're in danger or just feeling unsafe.</p>
+                    <hr>
+                    
+                    <div class="row">
+                       <div class="col allprofileHolder" >
+                            <div class="col profileHolder" style="display: block;" ng-repeat="contact in contactsList">
+                                <img ng-src="data:image/jpeg;base64,{{contact.photo}}" alt="" class="contacts-profilePic" style="float: left;">
+                                <p class="contactsSec-contactName" style="margin-left: 50px;">{{contact.name}}</p>
+                                    <a href="">
+                                       <i class="ion-android-more-vertical"></i>
+                                   </a>
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+                   
+                    </div>
+                  
+                    
+                </div>
+            </div>
+        
+        </ion-content>
+        
+          <div class="bar bar-footer">
+             <div class="title">Copyright 2016 | Gentle Bebes</div>
+        </div>
+</ion-view>

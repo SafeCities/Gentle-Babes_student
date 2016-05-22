@@ -1,0 +1,47 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-custom">
+        <h1 class="title community-reportTitle">REPORTS</h1>
+
+        <button class="button button-clear button-primary" ng-click="modal.hide()"><i class="ion-close"></i></button>
+    </ion-header-bar>
+    <ion-content padding="false">
+
+        <div class="col">
+            <h3 class="communityReports-title">Community Reports</h3>
+        </div>
+        <p class="" style="margin-left: 30px; color: #c2c2c2;">Nearby Reports</p>
+        <div class="row row-comm-report" ng-repeat="report in nearbyReports">
+            <div class="col col-60 col-textContainer-commReport" style="margin-top: 0px;">
+                
+                <p>{{report.city}}</p>
+                <br />
+                <p>{{report.created_at}} </p>
+                <br />
+                <p>{{report.topic}}</p>
+            </div>
+            <div class="col col-40 col-buttonContainer-commReport" style="margin-top: 0;">
+                <button class="button-community-map" ng-click="openModal()">View Map</button>
+                <button class="button-community-map" ng-click="openModal()">Share</button>
+            </div>
+        </div>
+
+   
+    <p class="" style="margin-left: 30px; color: #c2c2c2;">Other Reports</p>
+        <div class="row row-comm-report" ng-repeat="report in otherReports">
+            <div class="col col-60 col-textContainer-commReport" style="margin-top: 0px;">
+                
+                <p>{{report.city}}</p>
+                <br />
+                <p>{{report.created_at}} </p>
+                <br />
+                <p>{{report.topic}}</p>
+            </div>
+            <div class="col col-40 col-buttonContainer-commReport" style="margin-top: 0;">
+                <button class="button-community-map" ng-click="openModal()">View Map</button>
+                <button class="button-community-map" ng-click="openModal()">Share</button>
+            </div>
+        </div>
+
+</div>
+    </ion-content>
+</ion-modal-view>

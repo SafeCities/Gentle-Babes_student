@@ -1,0 +1,28 @@
+<ion-view view-title="MAP">
+  
+  <ion-nav-buttons side="right"> 
+    <label class="toggle toggle-balanced">
+       <input type="checkbox" ng-click="onToggleEnabled()" ng-model="state.enabled">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+    </label>
+  </ion-nav-buttons>
+
+  <ion-content scroll="false" data-tap-disabled="true">
+    <div id="map"></div>
+  </ion-content>
+<div class="custom-toast">
+  <div class="topic-holder"></div>
+  <div class="address-holder"></div>
+  <div class="time-holder"></div>
+</div>
+  <ion-footer-bar class="bar-stable">
+    <a ng-click="getCurrentPosition()" class="button button-icon icon ion-navigate"></a>
+    <h1 class="title" style="text-align:center">{{odometer}}km</h1>
+    <div class="buttons align-right">
+      <ion-spinner icon="ios-small" class="" ng-show="isChangingPace"></ion-spinner>
+      <button class="button icon {{state.startButtonIcon}}" ng-disabled="!state.enabled" ng-click="onClickChangePace()" style="width:75px"></button>
+    </div>
+  </ion-footer-bar>
+</ion-view>
